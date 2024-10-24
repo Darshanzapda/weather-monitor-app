@@ -1,0 +1,18 @@
+.container {
+  max-width: 1080px;
+  margin: 20px auto;
+  text-align: center;
+
+}
+
+.app-title::after {
+  content: ''; /* Create a decorative element */
+  display: block; /* Block display for the line */
+  width: 50%; /* Width of the line */
+  height: 4px; /* Height of the line */
+  background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient effect */
+  margin: 10px auto; /* Center the line */
+  border-radius: 5px; /* Rounded corners for the line */
+}
+
+

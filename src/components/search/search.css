@@ -1,0 +1,66 @@
+/* search.css */
+.search-container {
+    margin: 20px auto;
+    margin-top: 5%;
+    width: 100%; /* Ensure full width of the container */
+  }
+  
+  .search-input {
+    width: 100%; /* Full width for the input */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #333;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 153, 255, 0.5);
+    background-color: #202C3C;
+  }
+  
+  .search-input::placeholder {
+    color: #202C3C;
+    font-style: italic;
+  }
+  
+  .search-input:hover {
+    background-color: #dbdbdb;
+  }
+  
+  /* Targeting the dropdown */
+  .css-13cymwt-control, /* Dropdown container */
+  .css-yk16xz-control {
+    width: 100% !important; /* Full width dropdown */
+    box-shadow: none;
+  }
+  
+  .css-1okebmr-indicatorSeparator {
+    display: none; /* Remove the vertical separator in the dropdown */
+  }
+  
+  .css-26l3qy-menu {
+    width: 100% !important; /* Full width of the dropdown */
+    margin-top: 0;
+    left: 0 !important; /* Align the dropdown with the input */
+  }
+  
+  .css-4ljt47-MenuList {
+    max-height: 200px; /* Set max height for scrolling */
+    overflow-y: auto;
+  }
+  
+  .css-yt9ioa-option {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .css-yt9ioa-option:hover {
+    background-color: #dbdbdb;
+    color: #202C3C;
+  }
+  

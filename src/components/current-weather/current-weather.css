@@ -1,0 +1,90 @@
+.weather {
+  margin-top: 40px;
+  border-radius: 12px; /* Rounded corners */
+  color: #F5F5F5; /* Light text color for contrast */
+  background: url('/public/icons/bg.png'); /* Set the background image */
+  background-size: cover; /* Cover the entire card area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  padding: 30px; /* Padding for spacing */
+  position: relative; /* For pseudo-elements */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+/* Add upper line above the card */
+.weather::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px; /* Height of the upper line */
+  background: linear-gradient(to right, #1265ae, #04c8d2); /* Gradient effect */
+  border-radius: 12px 12px 0 0; /* Rounded corners for the line */
+}
+
+.weather:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; /* Space below the top section */
+}
+
+.city-container {
+  text-align: left; /* Align text to the left */
+}
+
+.city {
+  font-weight: 700; /* Bold city name */
+  font-size: 28px; /* Larger font size for city name */
+  margin: 0;
+  color: #000000; /* Bright white for city name */
+}
+
+.weather-description {
+  font-weight: 400; /* Regular weight for description */
+  font-size: 16px; /* Slightly larger font size */
+  margin: 5px 0; /* Space below description */
+  color: #000000; /* Light gray for description */
+}
+
+.weather-icon {
+  width: 80px; /* Icon size */
+}
+
+
+.bottom {
+  display: flex;
+  flex-direction: column; /* Stack details vertically */
+}
+
+.details {
+  width: 100%;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0; /* Vertical padding for each row */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Subtle border for separation */
+}
+
+.parameter-label {
+  font-weight: 540; /* Medium weight for labels */
+  font-size: 14px; /* Font size for readability */
+  color: #222222; /* Light gray for labels */
+}
+
+.parameter-value {
+  font-weight: 700; /* Bold for values */
+  font-size: 14px; /* Consistent font size */
+  color: #222222; /* White color for values */
+}
+
+.parameter-row:last-child {
+  border-bottom: none; /* Remove border from the last row */
+}

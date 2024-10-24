@@ -1,0 +1,16 @@
+
+services:
+  weather-monitor-app:
+    image: weather-monitor-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    environment:
+      - REACT_APP_OPENWEATHER_API_KEY= YOUR_API_KEY # Replace with your actual OpenWeatherMap API key
+      - REACT_APP_RAPIDAPI_KEY= YOUR_API_KEY # Replace with your actual RapidAPI key
+    volumes:
+      - ./:/app  # Mount the entire project directory
+    stdin_open: true
+    tty: true

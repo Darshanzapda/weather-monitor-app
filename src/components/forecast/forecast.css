@@ -1,0 +1,68 @@
+.forecast-container {
+  display: flex;
+  flex-direction: column; /* Stacks the titles vertically */
+  align-items: center; /* Centers the container */
+  
+}
+
+.forecast-title {
+  font-size: 28px; /* Larger font size for the title */
+  font-weight: bold; /* Bold text */
+  color: #f1f1f1; /* Primary color */
+  margin: 20px 0; /* Space above and below the title */
+  text-align: center; /* Center align text */
+  letter-spacing: 1px; /* Slightly increase spacing between letters */
+  position: relative; /* Position for pseudo-elements */
+}
+
+
+
+.forecast-cards {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+  width: 100%; /* Full width */
+  gap: 20px; /* Adds space between cards */
+  padding: 20px; /* Adds padding around the cards */
+  overflow-x: hidden; /* Hides horizontal overflow */
+  
+}
+
+.forecast-card {
+  background-color: #ffffff; /* Card background color */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Padding inside cards */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  text-align: center; /* Center align text inside the card */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  position: relative; /* Positioning for pseudo-elements */
+  
+}
+
+.forecast-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.forecast-card h3 {
+  font-size: 1.25em; /* Slightly larger font for the date */
+  margin-bottom: 10px; /* Space below the title */
+  color: #333; /* Dark color for the title */
+}
+
+.forecast-card p {
+  margin: 5px 0; /* Vertical spacing for paragraphs */
+  font-size: 1em; /* Font size for temperature info */
+  color: #2f2f2f; /* Grey color for the text */
+}
+
+.forecast-card::before {
+  content: ''; /* Create a decorative element */
+  position: absolute;
+  top: -10px; /* Position above the card */
+  left: 50%;
+  transform: translateX(-50%); /* Center the element */
+  width: 80%; /* Width of the decorative element */
+  height: 10px; /* Height of the decorative element */
+  background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient effect */
+  border-radius: 10px; /* Rounded corners for the decorative element */
+}
