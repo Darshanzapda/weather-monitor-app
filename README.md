@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Objective:**  
+### Objective:
 
 The Weather Monitoring App is a real-time data processing system designed to monitor weather conditions and provide summarized insights using rollups and aggregates. This application utilizes data from multiple APIs, including OpenWeatherMap, RapidAPI, and Open Meteo, to fetch current and historical weather data.
 
